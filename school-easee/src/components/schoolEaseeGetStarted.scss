@@ -1,0 +1,55 @@
+.schoolEaseeGetStarted-container{
+    width: 100%;
+    min-height: 60vh;
+    padding: 10vh 5vw;
+}
+.SchoolEaseeGetStarted-wrapper{
+    background: #548FEF;
+    border-radius: 20px;
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vh 10vw;
+    gap: 5%;
+
+    .title{
+        flex: 1 1 60%;
+        color: white;
+        
+        h2{
+            font-weight: 700;
+        }
+        p{
+            color: white;
+
+        }
+    }
+}
+
+.form-container{
+    
+    flex: 1 1 35%;
+    border-radius: 15px;
+    display: flex;
+    padding: 2em;
+    background: rgb(185, 175, 175);
+    flex-direction: column;
+    background: rgba($color: #fff, $alpha: .3);
+    
+    input{
+        margin: 0.5em;
+        padding: .7em 2em;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+    }
+    input:nth-child(5){
+        background: #23C131;
+        margin: 2em auto;
+        width: 50%;
+        color: #fff;
+    }
+}

@@ -1,0 +1,78 @@
+.mainContainer{
+    width: 100%;
+}
+
+
+.title{
+    text-align: center;
+
+}
+.title h2{
+    text-transform: capitalize;
+    font-size: 3.5rem;
+
+}
+.title h2  span{
+    color: #83C142;
+}
+.title p{
+    color: #758598;
+    font-size: 1.2rem;
+}
+.whySchoolEasee{
+    width: 75%;
+    margin: auto;
+}
+
+.hero-nav{
+
+    width: 75%;
+    gap: 20%;
+    margin: 10em auto;
+    display: flex;
+    
+
+    flex-wrap: wrap;
+}
+
+.img-box{
+
+    flex: 1 1 25em;
+
+}
+.img-box img{
+    display: block;
+    width: Min(100%,300px);
+    margin: auto;
+
+
+}
+
+.text-box{
+    flex: 1 1 20em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 4em;
+
+    h2{
+        font-size: 2em;
+        
+    line-height: 1.5em;
+        color: #758598;
+        margin-bottom :.75em ;
+    }
+    p{
+        color: #92a5bd;
+        font-size: 1.2em;
+
+    }
+}
+
+
+
+#\31, #\33,#\35{
+    flex-flow: row-reverse;
+    flex-wrap: wrap;
+}

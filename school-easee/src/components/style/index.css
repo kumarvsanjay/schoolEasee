@@ -1,0 +1,253 @@
+/* taiwind Css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ----------------------------------- */
+
+/* fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300&display=swap');
+
+
+
+/* ----------------------------------- */
+
+/* default settings */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+html{
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+    
+}
+
+
+/* ----------------------------------- */
+
+/* Header */
+
+
+/*  animations */
+
+
+.scale-up-center{
+    -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+
+ @-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+
+
+  /*  menu items bg  */
+
+  .navbar-menu_container {
+   
+    background:-moz-linear-gradient(21deg, #141313D9 0%, #D599D5 100%); 
+    background:-moz-linear-gradient(90deg, #00FFEB85 0%, #073ABBD1 100%); 
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-linear-gradient(90deg, #00FFEB85 0%, #073ABBD1 100%);
+
+    /* opera 11.10+ */
+    background:-o-linear-gradient(90deg, #00FFEB85 0%, #073ABBD1 100%);
+
+    /* ie 6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#073ABB', endColorstr='#00FFEB', GradientType=0 );
+
+    /* ie 10+ */
+    background:-ms-linear-gradient(90deg, #00FFEB85 0%, #073ABBD1 100%);
+
+    /* global 94%+ browsers support */
+    background:linear-gradient(90deg, #00FFEB85 0%, #073ABBD1 100%);
+    
+    
+   }
+
+
+   /*   header layer components  */
+
+   @layer components {
+    
+    .default-btn{
+        @apply text-[#7441D6] bg-neutral-50  hover:bg-[#7441D6] hover:text-white transition-all ease-in-out duration-300 px-16 py-4 rounded-md ;
+    }
+  }
+  
+
+
+
+  
+/* ----------------------------------- */
+
+
+/* Futures */
+
+.future-hero-nav{
+    flex: 1 1 25%;
+}
+.future-hero-nav  .img-box{
+        flex: 1 1 20%;
+        min-width: 30%;
+    
+}
+.future-hero-nav    .img-box img{
+        display: block;
+        margin: 2em;
+        width: 100%;
+    }
+.future-hero-nav   .text-box{
+        flex: 1 0 60%;
+        
+    }
+
+    /* ----------------------------------- */
+
+    /* Request a demo */
+.enrollDemo input{
+  border-radius: 0.5rem;
+font-size: 1.5rem;
+padding: 1em 2em;
+  color:#363651
+}
+/* .enrollDemo input::value{
+  padding: 3rem
+  
+  
+} */
+
+
+
+
+/* ----------------------------------- */
+/* ----------------------------------- */
+/*    footer   */
+
+     /* components */
+
+@layer components {
+    .footer-p {
+      @apply text-2xl capitalize cursor-pointer text-[#A0ACBD] p-2 font-thin;
+    }
+    .footer-h2{
+        @apply font-bold text-4xl capitalize text-white mb-6;
+    }
+    
+  }
+
+  /* ----------------------------------- */
+
+  /* footer-links */
+@layer components{
+
+  .footer-links-container{
+    
+    @apply px-56 py-32;
+    
+  }
+  .footer-links-title{
+    
+    @apply relative mb-24 before:bg-[#6A67F5]  before:content-[""] before:absolute before:w-5 before:h-[100%];
+    
+  }
+  .footer-links-title-h2{
+    
+    @apply text-6xl font-semibold my-6 py-4   text-[#6A67F5] ml-12 ;
+    
+  }
+  .footer-links-title-h3{
+    
+    @apply text-xl -mb-8 text-[#6A67F5] ml-12  ;
+    
+  }
+  .footer-links-title-p{
+    
+    @apply text-2xl text-[#5D6268] basis-3/6 ;
+    
+  }
+  .footer-links-title-img{
+    
+    @apply basis-1/4 h-full ;
+    
+  }
+  .footer-link-flex{
+    
+    @apply flex justify-between flex-wrap gap-10 ;
+    
+  }
+  
+  /* ----------------------------------- */
+  
+  /* careers */
+
+  
+  
+  
+  .designWrapper{
+    
+    @apply  flex flex-wrap py-20 mb-28 gap-12 items-stretch;
+  }
+  .career-wrap{
+    
+    @apply drop-shadow-2xl bg-white rounded-2xl flex flex-wrap py-20 gap-12 flex-col px-6 justify-between;
+    
+  }
+  .career-h3{
+    
+    @apply text-2xl font-medium;
+  }
+  .career-h3-span{
+    
+    @apply text-xl font-normal text-right;
+  }
+  .openSpan{
+    
+    @apply  bg-[#52E852] text-white p-3 py-1 w-fit block rounded-md;
+  }
+  .careerApplyBtn{
+    
+    @apply   block py-4 rounded-full bg-[#6565EF];
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+  
+/* ----------------------------------- */
+/* ----------------------------------- */
+/* ----------------------------------- */
